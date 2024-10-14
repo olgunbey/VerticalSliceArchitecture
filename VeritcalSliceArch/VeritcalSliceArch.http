@@ -1,0 +1,6 @@
+@VeritcalSliceArch_HostAddress = http://localhost:5105
+
+GET {{VeritcalSliceArch_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
