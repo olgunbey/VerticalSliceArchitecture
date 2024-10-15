@@ -23,7 +23,6 @@
   <ItemGroup>
     <Folder Include="Features\Category\Commands\" />
     <Folder Include="Features\Category\Queries\" />
-    <Folder Include="Features\Product\Queries\" />
     <Folder Include="Infrastructure\Infrastructure\" />
   </ItemGroup>
 

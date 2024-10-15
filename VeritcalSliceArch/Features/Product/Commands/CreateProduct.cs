@@ -7,7 +7,7 @@ using VeritcalSliceArch.Infrastructure.Persistence;
 
 namespace VeritcalSliceArch.Features.Product.Commands
 {
-    public static class CreateProduct
+    internal static class CreateProduct
     {
         public class Query : IRequest<bool>
         {
@@ -47,7 +47,7 @@ namespace VeritcalSliceArch.Features.Product.Commands
     {
         public void AddRoutes(IEndpointRouteBuilder app)
         {
-            app.MapPost("api/product", Handler).WithTags("Product").AddEndpointFilter<EndpointFilter>();
+            app.MapPost("api/product/createproduct", Handler).WithTags("Products").AddEndpointFilter<EndpointFilter>();
         }
 
         public static async Task<IResult> Handler([FromBody] CreateProductDto productDto, IMediator mediator, string zort)
